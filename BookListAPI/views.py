@@ -4,6 +4,7 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 
 # Create your views here.
-@api_view()
+@api_view() # to use the response class
 def books(request):
-    return Response('list of books', status=status.HTTP_200_OK)
+    return Response('list of the books',
+            status=status.HTTP_200_OK)
