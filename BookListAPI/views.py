@@ -6,4 +6,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def books(request):
-    return Response('list of the books', status=status.HTTP_200_OK)
+    return HttpResponse('list of the books', status=status.HTTP_200_OK)
