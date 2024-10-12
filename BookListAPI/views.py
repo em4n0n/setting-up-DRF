@@ -5,5 +5,6 @@ from rest_framework.decorators import api_view
 from django.http import HttpResponse
 
 # Create your views here.
+@api_view(['GET', 'POST'])
 def books(request):
-    return HttpResponse('list of the books', status=status.HTTP_200_OK)
+    return Response('list of the books', status=status.HTTP_200_OK)
