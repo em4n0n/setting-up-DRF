@@ -8,3 +8,4 @@ from django.http import HttpResponse
 @api_view(['GET', 'POST'])
 def books(request):
     return Response('list of the books', status=status.HTTP_200_OK)
+
