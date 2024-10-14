@@ -9,3 +9,5 @@ from django.http import HttpResponse
 def books(request):
     return Response('list of the books', status=status.HTTP_200_OK)
 
+class BookList(APIView):
+    
