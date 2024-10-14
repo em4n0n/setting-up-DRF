@@ -17,4 +17,6 @@ class BookList(APIView):
     
     def post(self, request):
         return Response({"title":request.data.get('title')}, status.HTTP_201_CREATED)
-        
+
+class Book(APIView):
+      
