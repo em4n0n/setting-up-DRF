@@ -11,7 +11,9 @@ from rest_framework.views import APIView
 
 class BookList(APIView):
     def get(self, request):
-        return Response({"message":"list of the books"}, status.HTTP_200_OK)
+        author = request.GET.get('author')
+        if('author'):
+            return Response({"message":"list of the books"}, status.HTTP_200_OK)
     
     def post(self, request):
         return Response({"message":"new book created"}, status.HTTP_201_CREATED)
